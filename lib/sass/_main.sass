@@ -1,0 +1,663 @@
+//@import susy
+
+//$susy: (columns: 3, gutters: 1/5, math: fluid, output: float, gutter-position: before, container: 1100px, container-position: center)
+//$susy: (columns: 3, gutters: 1/5, math: fluid, output: float, gutter-position: before, container: 1100px, container-position: center, debug: (image: show, color: rgba(#000, .05), output: background, toggle: top right))
+
+
+//$base-font-size: 16px !global
+//$base-line-height: 29px !global
+//$rhythm-unit: rem !global
+//$rem-with-px-fallback: true !global
+//
+//@include establish-baseline
+//
+
+@import compass/css3
+
++font-face("MyriadPro", font-files("MyriadPro-Regular.ttf", "MyriadPro-Regular.eot", "MyriadPro-Regular.woff", "MyriadPro-Regular.svg"))
++font-face("MyriadProBold", font-files("MyriadPro-Bold.otf"))
+
+$black: #202020
+$red: #ff2b06
+$yellow: #ffc102
+
+.c-red
+    color: $red
+.c-yellow
+    color: $yellow
+
+
+.wrap
+    //@include debug-vertical-alignment
+    min-width: 768px
+    overflow: hidden
+    color: #202020
+    font-family: Roboto
+
+.container
+    @extend .clearfix
+    max-width: 680px
+    margin: 0 auto
+
+
+
+
+.header
+    padding: 10px 0 248px
+    background: url(../pic/bg-header.png) no-repeat 50% 50%
+    background-size: cover
+    background-attachment: fixed
+
+.header__in
+    @extend .container
+    max-width: 580px
+
+.header__logo
+    width: 84px
+    margin: 0 auto 0
+
+
+.hader__title
+    margin: 115px 0 31px
+    max-width: 380px
+    color: #fdfdfd
+    line-height: 48px
+    font-size: 40px
+    font-weight: 700
+
+
+
+
+
+.about
+    padding: 42px 0 67px
+    font-size: 14px
+    font-weight: 300
+
+.about__title
+    width: 244px
+    display: inline-block
+    vertical-align: middle
+    font-size: 34px
+    font-weight: 700
+    text-transform: uppercase
+
+.about__description
+    width: 380px
+    display: inline-block
+    vertical-align: middle
+
+.about__list
+    margin-top: 31px
+    text-align: center
+    font-size: 0
+
+.about__list__item
+    width: 29.33%
+    margin-top: 52px
+    padding: 0 2%
+    display: inline-block
+
+.about__list__item__text
+    font-size: 16px
+
+
+
+
+.section__title
+    color: #ebeef2
+    text-align: center
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: 700
+
+
+
+
+.why
+    padding: 43px 0 37px
+    text-align: center
+    background-color: rgba(14, 14, 14, 0.7)
+    background: url(../pic/bg-why.png) no-repeat 50% 50%
+    background-size: cover
+
+.why__title
+    margin-bottom: 45px
+
+.why__description
+    margin-bottom: 63px
+    color: #ebeef2
+    font-size: 16px
+    font-weight: 300
+
+
+
+
+
+.portfolio
+    padding: 53px 0 0px
+
+.portfolio__title
+    color: #202020
+
+.title
+.bg-red
+.is-no-skew
+.slider
+.slider__in
+
+.slider__container
+    @extend .clearfix
+    margin-top: 30px
+
+.slider__item
+    float: left
+
+.slider__item__el
+    position: relative
+    height: 278px
+
+    &:hover
+        .slider__item__el__bg
+            opacity: 1
+            visibility: visible
+
+
+
+.slider__item__el__pic
+    max-width: 100%
+
+.slider__item__el__bg
+    @extend .animate
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    visibility: hidden
+    text-align: center
+    background-color: rgba(255, 193, 2, 0.65)
+
+
+.slider__item__el__text__title
+    position: absolute
+    left: 5%
+    bottom: 52%
+    width: 90%
+    color: #202020
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: 700
+
+    &:before
+        content: ''
+        position: relative
+        left: 0
+        right: 0
+        bottom: -37px
+        width: 39px
+        height: 1px
+        margin: 0 auto
+        display: block
+        background-color: #202020
+
+.slider__item__el__text__about
+    position: absolute
+    top: 52%
+    left: 5%
+    width: 90%
+    color: #202020
+    font-size: 16px
+    font-weight: 300
+
+    &:before
+        content: ''
+        position: relative
+        left: 0
+        right: 0
+        top: -5px
+        width: 39px
+        height: 1px
+        margin: 0 auto
+        display: block
+        background-color: #202020
+
+
+
+
+
+.result
+    position: relative
+    margin-bottom: 91px
+    padding: 44px 0 50px
+    background-color: #f0f0f0
+
+    &:before
+        content: ''
+        position: absolute
+        bottom: 6px
+        width: 100%
+        height: 5px
+        background-color: #e2e2e2
+        z-index: 1
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 11px
+        background-color: #c1c1c1
+
+.result__title
+    position: relative
+    color: #202020
+    margin-bottom: 60px
+
+    &:before
+        content: ''
+        position: absolute
+        right: 0
+        left: 0
+        bottom: -14px
+        width: 76px
+        height: 1px
+        margin: 0 auto
+        background-color: #202020
+
+.result__list
+    @extend .container
+    font-size: 16px
+    font-weight: 300
+    line-height: 24px
+
+.result__list__item
+    @extend .clearfix
+    margin: 0 0 60px
+
+.result__list__item__img
+    width: 100 / 680 * (680 - 390) + 0%
+    margin: 0 100 / 680 * 40%
+    float: left
+
+    &:first-child
+        margin: 0
+
+.result__list__item__col
+    width: 100 / 680 * 310%
+    margin: 0 100 / 680 * 40%
+    float: left
+    overflow: hidden
+    
+    &:first-child
+        margin: 0
+
+.result__list__item__title
+    margin-bottom: 20px
+    color: #202020
+    font-size: 20px
+    font-weight: 500
+
+.result__list__item__text
+.list
+
+.list__item
+    position: relative
+    margin-left: 20px
+
+    &:before
+        content: ''
+        position: absolute
+        top: 5px
+        left: -20px
+        width: 11px
+        height: 11px
+        display: inline-block
+        margin-right: 4px
+        border: 2px solid #202020
+        border-radius: 100%
+
+
+.result__title__min
+    @extend .result__list__item__title
+    margin-bottom: 25px
+    text-align: center
+
+.result__link
+    margin-bottom: 32px
+    color: #cc9a01
+    display: block
+    text-align: center
+    text-decoration: underline
+    font-size: 18px
+
+.result__images
+    max-width: 1178px
+    margin: 0 auto
+    font-size: 0
+
+.result__images__item
+    width: 19.6%
+    margin: 0 0.2%
+
+
+
+
+
+.step
+    padding: 48px 0 73px
+    background: url("../pic/bg-step.png") no-repeat 50% 0
+    background-size: cover
+
+.step__title
+    margin-bottom: 110 - 84px
+
+.step__list
+    @extend .clearfix
+    position: relative
+    min-width: 585px
+    margin: 0 auto
+
+    &:before
+        content: ''
+        position: absolute
+        right: 35px
+        top: 62%
+        @extend .icon-arr-down
+
+.step__list__item
+    margin-top: 84px
+    float: left
+    display: table
+    color: #ebeef2
+    font-weight: 300
+
+    i,
+    span
+        padding: 0 9px
+        display: table-cell
+        vertical-align: middle
+
+    span
+        padding: 0 20px
+
+    .icon-arr
+        padding: 0
+        display: inline-block
+
+
+.step__list__item__text
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+
+.icon-s1
+    + p
+        padding-right: 20px
+
+.icon-s4
+    padding-right: 28px !important
+
+.icon-s5
+    + p
+        padding-right: 20px
+
+.services
+    padding: 57px 0
+
+.services__title
+    margin-bottom: 30px
+    color: #202020
+
+.services__list
+    text-align: center
+
+.services__list__item
+    position: relative
+    width: 217px
+    margin: 22px 0
+    padding-bottom: 17px
+    display: inline-block
+    vertical-align: top
+    border: 2px solid #2ecc71
+
+    &:before
+        content: ''
+        position: absolute
+        left: 50%
+        margin-left: -2px
+
+    &:first-child
+        border: 2px solid #34aadc
+
+        .services__list__item__header
+            height: 120px
+            font-size: 20px
+            background-color: #00a8c5
+
+        .services__list__item__title
+            margin-bottom: -15px
+
+        &:before
+            top: -71px
+            left: auto
+            width: 116px
+            height: 71px
+            border-top: 2px solid #00a8c5
+            border-left: 2px solid #00a8c5
+
+
+    &:last-child
+        border: 2px solid #ff9500
+
+        .services__list__item__header
+            height: 120px
+            background-color: #ff9500
+
+        .services__list__item__title
+            font-size: 20px
+            text-align: center
+
+        &:before
+            top: -71px
+            left: auto
+            right: 50%
+            margin-right: -2px
+            width: 116px
+            height: 71px
+            border-top: 2px solid #ff9500
+            border-right: 2px solid #ff9500
+
+
+
+    &--center
+        margin: 0 8px
+
+        .services__list__item__header
+            height: 142px
+
+        .services__list__item__text
+            padding: 41px 31px 34px
+        
+        &:before
+            top: -29px
+            height: 29px
+            border: 2px solid #2ecc71
+    
+
+.services__list__item__header
+    padding: 15px 19px
+    box-sizing: border-box
+    background-color: #2ecc71
+
+.services__list__item__title
+    color: #fff
+    margin-bottom: 10px
+    text-align: left
+    font-size: 30px
+    font-weight: 300
+
+.services__list__item__text
+    padding: 25px 31px 32px
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+
+.btn-services
+    width: 162px
+    height: 38px
+    line-height: 38px
+    color: #fcfcfc
+    font-size: 18px
+    background-color: #2ecc71
+
+.btn-blue
+    background-color: #34aadc
+
+.btn-yellow
+    background-color: #ff9500
+
+.line-down
+    position: relative
+
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+
+.line-center
+    &:before
+        left: 50%
+        bottom: -25 - 69px
+        margin-left: -2px
+        height: 69px
+        border-left: 2px solid #2ecc71
+
+
+.line-right
+    &:before
+        width: 179px
+        height: 61px
+        right: 50%
+        bottom: -12 - 69px
+        margin-right: -1px
+        border-right: 2px solid #ff9500
+        border-bottom: 2px solid #ff9500
+
+    &:after
+        bottom: -12 - 69 - 28 + 1px
+        height: 28px
+        margin-left: -180px
+        border-right: 2px solid #ff9500
+
+.line-left
+    &:before
+        width: 179px
+        height: 61px
+        left: 50%
+        bottom: -12 - 69px
+        margin-left: -1px
+        border-left: 2px solid #34aadc
+        border-bottom: 2px solid #34aadc
+
+    &:after
+        bottom: -12 - 69 - 28 + 1px
+        height: 28px
+        margin-left: 179px
+        border-left: 2px solid #34aadc
+
+.services__result
+    position: relative
+    max-width: 683px
+    margin: 67px auto 53px
+    padding: 32px 66px 14px
+    box-sizing: border-box
+
+    text-align: center
+    line-height: 30px
+    font-size: 20px
+
+    background: url("../pic/bg-a.png") 0 100% no-repeat, url("../pic/bg-i.png") 100% 100% no-repeat
+    border: 2px solid #f44336
+
+    &:before
+        content: ''
+        position: absolute
+        top: -2px
+        left: 0
+        width: 100%
+        height: 9px
+        background: linear-gradient(to right, #00a8c5 0%,#00a8c5 33%,#2ecc71 33.1%,#2ecc71 66%,#ff9500 66.1%,#ff9500 100%)
+
+    button
+        margin-top: 33px
+
+.t-large
+    color: #ff9500
+    font-size: 24px
+
+
+.contact
+    padding: 31px 0 61px
+    background: url("../pic/bg-contact.png") 0 50% no-repeat
+    background-size: cover
+
+.contact__title
+    color: #ebeef2
+    margin-bottom: 73px
+
+.contact__in
+    @extend .clearfix
+    width: 630px
+    margin: 0 auto
+
+.contact__form
+    width: 100 / 630 * 327%
+    float: left
+
+.contact__field
+    width: 49%
+    height: 36px
+    padding: 0 14px
+    float: left
+    box-sizing: border-box
+
+    line-height: 36px
+    color: #ebeef2
+    font-weight: 300
+    text-transform: uppercase
+
+    border: 2px solid #ffc102
+
+    &:first-child
+        margin-right: 2%
+
+    &--btn
+        width: 100%
+        margin-top: 18px
+        color: #ffc102
+        font-size: 16px
+
+
+.contact__info
+    width: 100 / 630 * 250%
+    float: right
+    text-align: right
+
+.contact__link
+    margin-bottom: 12px
+    display: block
+    color: #ffc102
+    font-size: 20px
+    font-weight: 300
+    text-transform: uppercase
+
+    &:hover
+        text-decoration: underline
+
+.contact__link--mail
+
+
+
+
