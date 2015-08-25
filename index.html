@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Younker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <title>Prolaby</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="lib/css/style.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,8 +12,9 @@
     <![endif]-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="lib/js/jquery-2.1.1.min.js"><\/script>')</script>
+    <script src="lib/js/jquery.overlaydialog.js"></script>
+
     <script src="lib/js/app.js"></script>
-</head>
 <body>
 
 
@@ -21,28 +22,23 @@
 
     <section class="header">
         <div class="header__in">
-            <figure class="header__logo">
-                <img src="lib/pic/logo.png" alt="logo" class="logo"/>
-            </figure>
 
             <h1 class="hader__title">
                 Лучшие решения для мобильных устройств
             </h1>
-            <button class="btn header__btn js-more">Узнать подробнее</button>
+            <a href="#about" class="btn header__btn js-more">Узнать подробнее</a>
         </div>
     </section>
 
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h3 class="about__title">
-                Про <span class="c-yellow">prolaby</span>
+                О <span class="c-yellow">prolaby</span>
             </h3>
 
             <p class="about__description">
-                Prolaby - это дружная команда опытных разработчиков, дизайнеров. Ежедневно генерируем огромное
-                количество
-                и дей для ваших продуктов.
+                Prolaby &mdash; это дружная команда опытных разработчиков, дизайнеров. Ежедневно генерируем огромное количество идей для ваших продуктов.
             </p>
 
             <ul class="about__list">
@@ -119,7 +115,8 @@
                 Сделай свой бизнес, шагающий в ногу с прогрессом, а мы в этом вам поможем. Мы разрабатываем архитектуру
                 проекта, определяем основной дизайн. Разрабатываем
                 код приложения и максимально оптимизируем его. Прорабатываем дизайн:
-                интерфейс, иконка, фоны и кнопки. Тестируем и публикуем его. <strong>Будь современным!</strong>
+                интерфейс, иконка, фоны и кнопки. Тестируем и публикуем его.<br />
+                <strong>Будь современным!</strong>
             </p>
 
             <button class="btn btn--large js-order">
@@ -141,200 +138,286 @@
                 <ul class="slider__container">
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img1.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-1-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <h4 class="slider__item__el__text__title">
-                                    Mobile App Design
+                                    The teacher
                                 </h4>
-                                <p class="slider__item__el__text__about">Музыкальный ярмарок</p>
+                                <p class="slider__item__el__text__about">educational game for kids</p>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">The teacher — educational game for kids</h2>
+                                    <p class="pfolio__description">
+                                    Training application for children. With this application the child quickly learns colors, numbers, and animals in English and Russian. Each animal, color and number has its own sound in both languages. All sounds are also translated into both languages. There are two modes: training and practice.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        games
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-1-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img2.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-2-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        HeadAche
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">medical app for analysis of headache</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">HeadAche — medical app for analysis of headache</h2>
+                                    <p class="pfolio__description">
+                                        The application that display frequency and intensity of headaches. Also support plotting of statistic. Display days of the month, time of day and month of the year, when and how powerful of headache user had. Beautiful design visualizing parts of brain and pain intensity which helps the user to interact with the application in easy and intuitive way.
+
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        medicine
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, serialization, JJoe64 GraphView
+                                    </p>
+                                    <br />
+                                </div>
+
+                                <div class="pfolio__image"><img src="lib/img/portfollio-2-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img3.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-3-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        Aristocrats.fm
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">best online radio of the country</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">Aristocrats.fm — best online radio of the country</h2>
+                                    <p class="pfolio__description">
+                                        The Android application for online radio — <a href="http://aristocrats.fm/" target="_blank">aristocrats.fm</a>. It allows you to listen to the radio on low speed Internet while maintaining excellent quality. You can listen to the radio broadcasts wherever there is mobile internet (at a rate of 64 kbit/s). Have the ability to save the name of your favorite songs and look playlist which was parsed from the website. The application works with two threads of music and allows to switch between them.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        music & audio
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, AAC Decoder, Google Analytics, Nine Old Androids, JSON, GSON, OkHttp<br />
+                                    </p>
+                                    <p>
+                                        <a href="https://play.google.com/store/apps/details?id=com.qsoft.aristocrats" target="_blank">
+                                            <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                                        </a>
+                                    </p>
+                                    <br />
+                                </div>
+
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-3-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img4.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-4-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        3botinka
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">your online wardrobe</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">3botinka — your online wardrobe</h2>
+                                    <p class="pfolio__description">
+                                        Android application for <a href="http://en.3botinka.com/" target="_blank">social network</a> that allows to create own virtual wardrobe, looks and sets online. User can plan look for every day, plan wardrobe for next season and shop smart — buy clothes, shoes, underwear, headwear and accessories depends their compatibility in set. There are possibility of adding users clothes to wardrobe, combine them in sets and follow celebrities wardrobes.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        social
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, Facebook SDK, Google-play-services, Sliding Menu, Disk Lru Cache, Volley, Universal Image Loader, OkHttp, Crittercism, JSON, GSON, Google Analytics, Nine Old Androids, Glide, Splunk MINT<br />
+                                    </p>
+                                    <p>
+                                        <a href="https://play.google.com/store/apps/details?id=com.ThreeBoots" target="_blank">
+                                            <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                                        </a>
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-4-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img5.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-5-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        Radio KPI
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">the biggest student online radio in Ukraine</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">Radio KPI — the biggest student online radio in Ukraine</h2>
+                                    <p class="pfolio__description">
+                                        The client application for <a href="http://r.kpi.ua/" target="_blank">R.KPI.UA</a>. This application allows you to listen to your favorite radio at any time, wherever you are. Gives you an opportunity to listen minimized mode and store the names of your favorite songs. Provides choice of quality audio stream, depending on the connection speed. If user signed-in via <a href="https://vk.com/" target="_blank">vk.com</a> he also could add favorite songs to his song list on <a href="https://vk.com/" target="_blank">vk.com</a>.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        music & audio
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, serialization, Android Side Menu, VK API
+                                    </p>
+                                    <br />
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-5-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img5.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-6-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        Splace
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">solving problems with urban space</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">Splace — solving problems with urban space</h2>
+                                    <p class="pfolio__description">
+                                         It solves the problem with the lack of modern urban space planning. Splace - is a mobile application that will allow to collect money or petition needed to install a specific object in a specific location on the map. The user defines a point on the map where it wants to set a desired item. Then he selects the type of the object (this may be a bicycle parking, rubbish bin, bench, green lawn, etc.) After that, the application starts a small crowdfunding project, to sponsor the installation of the object.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        social
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, Parse API, Google play services, JSON, GSON, Retrofit, Google Analytics
+                                    </p>
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-6-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img6.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-7-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        uniTimetable
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">app for university schedules with per-class chats</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">uniTimetable — app for university schedules with per-class chats</h2>
+                                    <p class="pfolio__description">
+                                         Allows users to create timetable or import existing one. Creating timetable for your group you providing this data for your classmates. App provided possibility to leave comments and communicate inside the lesson. Chatting where each class has its own chat which is very handy if you choose your schedule yourselves and therefore have different groupmates. You also can share the lesson to social network. Support pre-Lollipop devices with the same design.
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        study & work
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, Parse API, Nine Old Androids, JSON, Android Animations lib, GSON
+                                    </p>
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-7-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                     <li class="slider__item">
                         <figure class="slider__item__el">
-                            <img class="slider__item__el__pic" src="lib/img/img7.jpg" alt="slide-img"/>
+                            <img class="slider__item__el__pic" src="lib/img/portfollio-8-1.png" alt="slide-img"/>
                             <figcaption class="slider__item__el__bg">
                                 <div class="slider__item__el__text">
                                     <h4 class="slider__item__el__text__title">
-                                        Mobile App Design
+                                        Forsocial
                                     </h4>
-                                    <p class="slider__item__el__text__about">Музыкальный ярмарок</p></div>
+                                    <p class="slider__item__el__text__about">unites voluntary movement</p></div>
                             </figcaption>
                         </figure>
+                        <script type="text/template" class="js-slider__item__detailed">
+                            <div class="pfolio">
+                                <div class="pfolio__content">
+                                    <h2 class="pfolio__title">Forsocial — unites voluntary movement</h2>
+                                    <p class="pfolio__description">
+                                        The online platform for association, communication and implementation of volunteer projects, where everyone can realize their own potential in the most convenient way. The app brings together people who want to become volunteers and the organizations that need their help. Users can join the event, find the place it taking place and check-in there. Any user can share his event and find people who can help him within an instant. Support pre-Lollipop devices with the same design.
+
+                                    </p>
+                                    <p>
+                                        <b>Category:</b><br />
+                                        social
+                                    </p>
+                                    <p>
+                                        <b>Technologies:</b><br />
+                                        Android SDK, Facebook SDK, Parse SDK, Google-play-services, GCM, Joda Time, JSON, GSON, Google Analytics, Splunk MINT
+                                    </p>
+                                    <p>
+                                        <a href="https://play.google.com/store/apps/details?id=com.qsoft.forsocial.app" target="_blank">
+                                            <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="c"></div>
+                                <div class="pfolio__image"><img src="lib/img/portfollio-8-2.png" /></div>
+                            </div>
+                        </script>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-
-
-    <section class="result">
-        <div class="container">
-            <h4 class="section__title result__title">
-                Mobile App Design
-            </h4>
-
-            <ul class="result__list">
-
-                <li class="result__list__item">
-                    <img src="lib/img/y.png" alt="res-img" class="result__list__item__img"/>
-
-                    <div class="result__list__item__col">
-                        <h6 class="result__list__item__title">
-                            ЗАДАЧА:
-                        </h6>
-
-                        <p class="result__list__item__text">
-                            Задача организации, в особенности же новая модель организационной деятельности позволяет
-                            выполнять важные задания по разработке новых предложений. Идейные соображения высшего
-                            порядка, а также сложившаяся структура организации позволяет выполнять важные задания по
-                            разработке направлений прогрессивного развития. Товарищи! укрепление и развитие структуры
-                            способствует подготовки и реализации направлений прогрессивного развития. Идейные
-                            соображения высшего порядка, а также начало повседневной работы по формированию позиции
-                            представляет собой интересный эксперимент проверки модели развития.
-                        </p>
-                    </div>
-                </li>
-
-                <li class="result__list__item">
-
-                    <div class="result__list__item__col">
-                        <h6 class="result__list__item__title">
-                            Что было сделано
-                        </h6>
-                        <ul class="list">
-                            <li class="list__item">Разработана стратегия продвижения бренда</li>
-                            <li class="list__item">Разработана стратегия повышения продаж услуг</li>
-                            <li class="list__item">Анализ бизнес-ниши</li>
-                            <li class="list__item">Определение болей клиента</li>
-                            <li class="list__item">Формирование уникального торгового предложения</li>
-                            <li class="list__item">Разработана стратегия повышения продаж</li>
-                            <li class="list__item">Определили каталог услуг</li>
-                        </ul>
-                    </div>
-
-                    <img src="lib/img/p1.png" alt="res-img" class="result__list__item__img"/>
-                </li>
-
-                <li class="result__list__item">
-                    <img src="lib/img/p2.png" alt="res-img" class="result__list__item__img"/>
-
-                    <div class="result__list__item__col">
-                        <h6 class="result__list__item__title">
-                            Процесс
-                        </h6>
-                        <ul class="list">
-                            <li class="list__item">Разработали уникальный шаблон, что адаптирован под разные
-                                устройства
-                            </li>
-                            <li class="list__item">Были подобраны цветовая схема и шрифты, разработан уникальный
-                                дизайн
-                            </li>
-                            <li class="list__item">Разработка уникального торгового предложения</li>
-                            <li class="list__item">Разработали уникальный контент, был сформирован продающий текст,
-                                учитывая
-                                преимущества клиента
-                            </li>
-                            <li class="list__item">Разработаны уникальные и продающие заголовки</li>
-                            <li class="list__item">Провели оптимизацию лендинга для увеличения скорости загрузки на
-                                компьютерах и мобильных устройствах
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-
-        <section class="finaly">
-            <h6 class="result__title__min">
-                Результат
-            </h6>
-            <a href="www.wildberries.ru" class="result__link">www.wildberries.ru</a>
-
-            <figure class="result__images">
-                <img src="lib/img/img11.png" alt="screen" class="result__images__item"/>
-                <img src="lib/img/img12.png" alt="screen" class="result__images__item"/>
-                <img src="lib/img/img13.png" alt="screen" class="result__images__item"/>
-                <img src="lib/img/img14.png" alt="screen" class="result__images__item"/>
-                <img src="lib/img/img15.png" alt="screen" class="result__images__item"/>
-            </figure>
-        </section>
-
-    </section>
-
 
     <section class="step">
         <div class="container">
@@ -496,7 +579,13 @@
 
 </div>
 
-
+<script>
+    // відкриття модального вікна при кліку на роботу в портфоліо
+    $('.slider__item').click(function() {
+        var html = $(this).find('.js-slider__item__detailed').html()
+        $(html).overlayDialog()
+    })
+</script>
 
 </body>
 </html>

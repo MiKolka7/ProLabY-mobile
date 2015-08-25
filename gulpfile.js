@@ -61,6 +61,7 @@ gulp.task('sass', function(){
             sassDir:   './lib/sass/',
             fontsDir:  './lib/font/',
             imagesDir: './lib/pic/',
+            httpGeneratedImagesPath: '../pic/',
             force: true
         }))
         .pipe(connect.reload())

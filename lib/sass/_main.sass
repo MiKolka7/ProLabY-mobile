@@ -21,6 +21,10 @@ $black: #202020
 $red: #ff2b06
 $yellow: #ffc102
 
+
+.c
+    clear: both
+
 .c-red
     color: $red
 .c-yellow
@@ -44,7 +48,7 @@ $yellow: #ffc102
 
 .header
     padding: 10px 0 248px
-    background: url(../pic/bg-header.png) no-repeat 50% 50%
+    background: url(../pic/bg-header.jpg) no-repeat 50% 50%
     background-size: cover
     background-attachment: fixed
 
@@ -58,14 +62,12 @@ $yellow: #ffc102
 
 
 .hader__title
-    margin: 115px 0 31px
+    margin: 200px 0 31px
     max-width: 380px
     color: #fdfdfd
     line-height: 48px
     font-size: 40px
     font-weight: 700
-
-
 
 
 
@@ -100,6 +102,7 @@ $yellow: #ffc102
 
 .about__list__item__text
     font-size: 16px
+    padding-top: 12px
 
 
 
@@ -151,11 +154,12 @@ $yellow: #ffc102
     margin-top: 30px
 
 .slider__item
+    cursor: pointer
     float: left
 
 .slider__item__el
     position: relative
-    height: 278px
+    height: 228px
 
     &:hover
         .slider__item__el__bg
@@ -437,7 +441,7 @@ $yellow: #ffc102
             background-color: #00a8c5
 
         .services__list__item__title
-            margin-bottom: -15px
+            margin-bottom: -5px
 
         &:before
             top: -71px
@@ -457,7 +461,6 @@ $yellow: #ffc102
 
         .services__list__item__title
             font-size: 20px
-            text-align: center
 
         &:before
             top: -71px
@@ -497,6 +500,7 @@ $yellow: #ffc102
     text-align: left
     font-size: 30px
     font-weight: 300
+    text-align: center
 
 .services__list__item__text
     padding: 25px 31px 32px
@@ -531,7 +535,7 @@ $yellow: #ffc102
         left: 50%
         bottom: -25 - 69px
         margin-left: -2px
-        height: 69px
+        height: 76px
         border-left: 2px solid #2ecc71
 
 
@@ -660,4 +664,49 @@ $yellow: #ffc102
 
 
 
+
+.pfolio
+    padding: 20px 20px 0
+    font-family: Roboto, sans-serif
+    font-size: 16px
+    line-height: 24px
+    color: #202020
+    img
+        width: auto
+        max-width: 100%
+    a
+        color: #404040
+        text-decoration: underline
+        &:hover
+            background: rgba(64,64,64,0.1)
+        &:active
+            color: #fff
+    &__title
+        font-size: 20px
+        line-height: 24px
+        font-weight: 500
+        margin: 0 0 20px
+    p
+        margin: 0 0 20px
+    &__content
+        clear: both
+        &-left
+            float: left
+            width: 60%
+            box-sizing: border-box
+            padding-right: 20px
+            @media screen and (max-width: 480px)
+                float: none
+                width: 100%
+        &-right
+            float: right
+            width: 40%
+            @media screen and (max-width: 480px)
+                float: none
+                width: 100%
+
+    &__image
+        width: 100%
+        margin: 0 0 20px
+        text-align: center
 
